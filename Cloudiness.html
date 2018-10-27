@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Visualization Dashboard</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+  <body>
+
+    <div class="navbar navbar-default">
+      <div class="container-fluid">
+         <a class="navbar-brand page-scroll" href="index.html">Latitude</a>
+         <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+         </button>
+      
+          <div class="collapse navbar-collapse navHeaderCollapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="#"class ="dropdown-toggle" data-toggle="dropdown">Plots<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="temp.html">Max Temperature</a></li>
+                  <li><a href="humidity.html">Humidity</a></li>
+                  <li><a href="Cloudiness.html">Cloudiness</a></li>
+                  <li><a href="windspeed.html">Wind Speed</a></li>
+                </ul>
+               </li>
+              <li ><a class="page-scroll" href="comparsion.html">Comparsion</a></li>
+              <li ><a class="page-scroll" href="data.html">Data</a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    <div class = "container">
+        <div class="row">
+            <div class="hidden-xs col-sm-8 col-md-8 col-lg-8">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+
+                    <h2>vs Cloudiness</h2>
+                    <hr>
+                    <a href ="Cloudiness.html"><img src="Images\Fig3.png" align="left" alt="Cloudiness Vs Latitude" ></a>
+                    <p class = "text">As expected, the weather becomes significantly warmer as one approaches the equatorv(0 Deg Latitude).
+                            More interestingly, however, is the fact that the southern hemispher tends to be warmwer this time of year than the northern hemisphere.
+                            This may be due to the tilt of the earth at the time of year this data was gathered.</p>
+                    <br>        
+                    </div>
+                </div>
+            </div>
+            <div class="hidden-xs col-sm-4 col-md-4 col-lg-4">
+                <div class="panel panel-default">
+                        <div class="panel-body">                                    
+                            <h2>Visualizations</h2>
+                            <hr>
+
+                            <div class="row" >
+                                <div class="hidden-xs col-sm-4 col-md-4 col-lg-4"><a href ="temp.html"><img class = "img img-responsive" src="Images\Fig1.png"  height=120px width=175px alt="Max Tempreature Vs Latitude"></a></div>
+                                <div class="hidden-xs col-sm-4 col-md-4 col-lg-4"><a href ="humidity.html"><img class = "img img-responsive"src="Images\Fig2.png" height=120px width=175px alt="Lalitude Vs Humidity"></a></div>
+                            </div>
+                            <div class="row">
+                                <div class="hidden-xs col-sm-4 col-md-4 col-lg-4"><a href ="Cloudiness.html"><img class = "img img-responsive"src="Images\Fig3.png" height=120px width=175px alt="Lalitude Vs Cloudiness"></a></div>
+                                <div class="hidden-xs col-sm-4 col-md-4 col-lg-4"><a href ="windspeed.html"><img class = "img img-responsive"src="Images\Fig4.png" height=120px width=175px alt="Lalitude Vs Wind Speed"></a></div>
+                            </div>
+                                
+                        </div>
+                </div>     
+            </div>    
+    </div>
+  
+   
+  <br>
+    <!-- Footer -->
+    <div class="bottomrow">
+      <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
+          <footer>
+              <p style="text-align: center">© Copyright Coding Bootcamp 2017<a href = "https://github.com/lalitaeranki"></a></p>
+          </footer>
+      </div>
+  </div>
+  </body>
+</html>

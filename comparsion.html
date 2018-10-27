@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Visualization Dashboard</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+  <body>
+
+    <div class="navbar navbar-default">
+      <div class="container-fluid">
+         <a class="navbar-brand page-scroll" href="index.html">Latitude</a>
+         <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+         </button>
+      
+          <div class="collapse navbar-collapse navHeaderCollapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="#"class ="dropdown-toggle" data-toggle="dropdown">Plots<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="temp.html">Max Temperature</a></li>
+                  <li><a href="humidity.html">Humidity</a></li>
+                  <li><a href="Cloudiness.html">Cloudiness</a></li>
+                  <li><a href="windspeed.html">Wind Speed</a></li>
+                </ul>
+               </li>
+              <li ><a class="page-scroll" href="comparsion.html">Comparsion</a></li>
+              <li ><a class="page-scroll" href="data.html">Data</a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Comparison:Latitude Vs.X</h1>
+          <hr>
+            <h6>Click any plot to get indepth analysis.</h6>
+            <div class="row">
+              <div class="col-md-6">
+            <h3 class = "text-center">vs Max Temperture</h3>
+             <a href ="temp.html"><img src="Images\Fig1.png" width=90% alt="Max Tempreature Vs Latitude"></a>
+              </div>
+            
+              <div class="col-md-6">
+            <h3 class = "text-center">vs Humidity</h3>
+             <a href ="humidity.html"><img src="Images\Fig2.png" width=90% alt="Lalitude Vs Humidity"></a>
+              </div>
+            </div>
+            <hr>
+          <div class="row">
+            <div class="col-md-6">
+            <h3 class = "text-center">vs Cloudiness</h3>
+             <a href ="Cloudiness.html"><img src="Images\Fig3.png" width=90%  alt="Lalitude Vs Cloudiness"></a>
+             </div>
+             
+             <div class="col-md-6">
+             <h3 class = "text-center">vs Wind Speed</h3>
+             <a href ="windspeed.html"><img src="Images\Fig4.png" width=90%  alt="Lalitude Vs Wind Speed"></a>
+             <hr>
+             </div>
+         </div>
+       
+        </div>
+      </div>
+     </div>
+    </body>
+ </html>
